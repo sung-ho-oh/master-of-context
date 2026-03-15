@@ -1,5 +1,5 @@
-// ❗ 중요: Google Apps Script 배포 후 생성된 '웹 앱 URL'을 여기에 붙여넣으세요.
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxzBniBCRqjJP51dVOFUQRl_Cb1d1FAGfdIH60az9DnSSgdx1iAScDKnS_7TNx-Evc/exec';
+// ❗ 중요: 파이썬 로컬 서버 API 주소입니다. (앱스 스크립트 대신 사용)
+const SCRIPT_URL = 'http://localhost:8000/chat';
 
 const messagesContainer = document.getElementById('chat-messages');
 const userInput = document.getElementById('user-input');
