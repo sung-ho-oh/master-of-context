@@ -6,8 +6,8 @@
  * 4. 생성된 웹 앱 URL을 프론트엔드의 script.js 에 복사합니다.
  */
 
-// ❗ 중요: 아래 변수에 Gemini API 키를 입력하세요.
-const GEMINI_API_KEY = "YOUR_GEMINI_API_KEY";
+// ❗ 중요: 스크립트 속성(Script Properties)에 GEMINI_API_KEY 항목을 추가하고 API 키 값을 입력하세요.
+const GEMINI_API_KEY = PropertiesService.getScriptProperties().getProperty('GEMINI_API_KEY');
 
 function doPost(e) {
   // CORS 및 클라이언트 통신용 기본 헤더
@@ -42,7 +42,7 @@ function doPost(e) {
 }
 
 function callGeminiAPI(prompt) {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
   
   // 챗봇 페르소나 설정
   const systemInstruction = `당신은 'Master of Context'라는 이름의 스마트하고 전문적인 지식 챗봇입니다.

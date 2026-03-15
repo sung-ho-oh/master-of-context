@@ -1,5 +1,5 @@
 // ❗ 중요: Google Apps Script 배포 후 생성된 '웹 앱 URL'을 여기에 붙여넣으세요.
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx2VNUeqT0qerckYllCeA_1GZW7aXJCG91sdYvowJka90viRz-fGpI3qYpJgPLYDhc8Bg/exec';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwLPQEjRsWWHs4rDKMKXS0okxidoofTsuS95R7vtvEEPHeoRHEE1Ih_cSTrWKW4ZPZ8Hw/exec';
 
 const messagesContainer = document.getElementById('chat-messages');
 const userInput = document.getElementById('user-input');
